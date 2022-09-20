@@ -1,0 +1,29 @@
+--Create a clothing store database
+
+CREATE TABLE inventory (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, material TEXT, color TEXT);
+
+INSERT INTO inventory VALUES (1, "shirts", 10, 5, "cotton", "black");
+INSERT INTO inventory VALUES (2, "pants", 10, 20, "polyester", "grey");
+INSERT INTO inventory VALUES (3, "jackets", 5, 10, "wool", "brown");
+INSERT INTO inventory VALUES (4, "socks", 20, 3, "cotton", "white");
+INSERT INTO inventory VALUES (5, "underwear", 15, 4, "cotton", "pink");
+INSERT INTO inventory VALUES (6, "jeans", 25, 25, "denim", "blue");
+INSERT INTO inventory VALUES (7, "blouses", 10, 40, "silk", "white");
+INSERT INTO inventory VALUES (8, "shorts", 5, 5, "cotton", "khaki");
+INSERT INTO inventory VALUES (9, "dresses", 10, 10, "cotton", "black");
+INSERT INTO inventory VALUES (10, "sweaters", 10, 50, "cashmere", "green");
+INSERT INTO inventory VALUES (11, "shoes", 30, 15, "leather", "brown");
+INSERT INTO inventory VALUES (12, "hats", 5, 10, "suede", "tan");
+INSERT INTO inventory VALUES (13, "swimsuits", 10, 20, "spandex", "pink");
+INSERT INTO inventory VALUES (14, "skirts", 15, 10, "linen", "white");
+INSERT INTO inventory VALUES (15, "belts", 5, 5, "leather", "black");
+
+--display the database ordered by price
+SELECT * FROM inventory ORDER BY price DESC;
+
+--display the database ordered by quantity
+SELECT * FROM inventory ORDER BY quantity DESC;
+
+--display the database where price is less than or equal to 5
+SELECT * FROM inventory WHERE price <=5 ORDER BY price DESC;
+
